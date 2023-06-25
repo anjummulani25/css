@@ -1,0 +1,76 @@
+<html>
+<head>
+  <style>
+    nav {
+      background-color: #333;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .menu li a {
+      display: block;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+
+    .submenu {
+      position: relative;
+    }
+
+    .submenu .submenu-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+    }
+
+    .submenu:hover .submenu-content {
+      display: block;
+    }
+
+    .submenu-content li {
+      display: block;
+    }
+
+    .submenu-content li a {
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li class="submenu">
+        <a href="#">Products</a>
+        <ul class="submenu-content">
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>\
+          <li><a href="#">Category 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      
+      
+      <li><a href="#">none</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
